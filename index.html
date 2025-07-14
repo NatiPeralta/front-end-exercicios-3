@@ -8,20 +8,50 @@
 </head>
 <body>
     <header>
-        <h1>Nada de interessante para ver aqui</h1>
-        <p>Sério, po</p>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo"> <img src="./images.img/tl.png" id="img" height="40px" width="40px">Natália Peralta</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li id="nav-item"><a href="listas.html" class="nav-link">Listas</a></li>
+                <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <h1>Lista de Exercícios 3 - Desenvolvimento Web</h1>
+        <p>Esse site foi desenvolvido exclusivamente para praticar os conceitos em HTML e CSS adquiridos nas aulas do curso Dev. Full Stack Jr da +praTi</p>
     </header>
 
     <main>
+        <section class="section-1">
         <h2>Missão</h2>
-        <p class="destaque">Oi, esqueci qual era a missão</p>
+        <p class="destaque"p>Minha missão ao desenvolver este projeto foi aplicar na prática os fundamentos essenciais do desenvolvimento web, com foco em estruturação semântica de páginas HTML, estilização com CSS e criação de componentes interativos. Através dos exercícios, busquei consolidar conhecimentos fundamentais que servirão como base sólida para minha atuação futura como desenvolvedora front-end.</p>
+        </section>
 
+        <section class="section-2">
+        <h2>Tecnologias aplicadas</h2>
+        <p class="destaque">Durante este projeto, utilizei HTML5 para estruturar as páginas de forma semântica, CSS3 para aplicar estilos visuais, incluindo conceitos de Box Model, seletores, Grid e Flexbox. Também experimentei media queries para responsividade e implementei meu primeiro menu interativo adaptado para dispositivos móveis. Cada etapa foi pensada para unir teoria à prática de maneira progressiva.</p>
+        </section>
+
+        <section class="section-3">
         <h2>Visão</h2>
-        <p></p>
+        <p class="destaque"p>A visão deste projeto é ser um marco inicial no meu portfólio como desenvolvedora, refletindo minha evolução e comprometimento com o aprendizado contínuo. Almejo transformar estudos em soluções reais, com código limpo, acessível e responsivo, seguindo boas práticas e princípios modernos do front-end.</p>
+        </section>
     </main>
 
     <footer>
-        <p>@direitos autorais blá blá</p>
+        <p>&copy; 2025 Natália Peralta — Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector(".nav ul");
+            navList.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
