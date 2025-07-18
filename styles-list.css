@@ -21,9 +21,6 @@ main {
     color: #353970;
     margin: 20px 0 100px 0;
     padding: 40px;
-    display: flex;
-    align-items: center;
-	justify-content: center;
     margin-bottom: 100px;
     flex-wrap: wrap;
     gap: 20px;
@@ -38,6 +35,68 @@ footer {
     padding: 25px;
     text-align: center;
     border-bottom: 1px solid #CBD5E0;
+}
+
+.hobbies-galeria {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.hobbies-lista {
+  list-style: none; /* remove as bolinhas */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* um por linha */
+  gap: 15px;
+}
+
+.hobbies-lista li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobbies-lista li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #fefefe;
+}
+
+.hobbies-lista li::before {
+  content: "⭐ ";
+  color: #ff7f50; /* cor do ícone */
+}
+
+.galeria {
+  flex: 0 0 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  margin-top: 6px;
 }
 
 li{
@@ -165,6 +224,10 @@ p {
     font-style: italic;
     background-color: rgba(253, 227, 248, 0.8);
     border-radius: 10px;
+}
+
+#importante {
+    border-top: 1px solid white;
 }
 
 @media(max-width: 600px) {
