@@ -23,25 +23,34 @@
         </nav>
 
         <h1>Listas e Galeria - Personalização by Nati</h1>
+        <p>Essa página foi desenvolvida com intuito de exibir alguns conceitos em HTML e CSS adquiridos nas aulas do curso Dev. Full Stack Jr da +praTi</p>
     </header>
 
     <main>
          <section class="main-content">
-            <h2>Sobre mim: Descubra os meus 5 Hobbies favoritos</h2>
-
             <div class="hobbies-galeria">
                 <ul class="hobbies-lista">
+                    <h2>Sobre mim: Descubra os meus 5 Hobbies favoritos!</h2>
+                    <p>Oie, tudo bem? Eu me chamo Natália e estou muito feliz de ter você por aqui! Além de ser uma pessoa apaixonada por tecnologia e querer muito me tornar uma Dev, também tenho alguns passatempos que costumo praticar quando não estou no trabalho ou na frente do computador programando. Aqui vai a minha lista com 5 Hobbies que eu adoro: </p>
                     <li>Ler livros</li>
                     <li>Jogar The Sims 4</li>
                     <li>Assistir séries de comédia</li>
                     <li>Pintar</li>
                     <li>Estudar conteúdos para me tornar uma Dev</li>
+
+                    <p id="texto">Como você deve ter percebido, cozinhar não faz parte da minha lista de Hobbies favoritos, mas gostaria de compartilhar com vocês uma receita excelente e prática (nada saudável) que já me salvou de várias noites de preguiça! ;D </p>
+
+                    <img src="./images.img/miojo-gourmet.jpg" alt="">
+
+                    <h2>Receita simples para fazer em casa: Miojo Gourmet</h2>
                 </ul>
-    
-            <div class="galeria">
+               
+        <div class="hobbies-lista">
+            <h2>Últimos posts relacionados aos meus Hobbies:</h2>
+                <div class="galeria">
                 <figure>
                     <img src="./images.img/1.png" alt="Dia de leitura">
-                    <figcaption>Dia de leitura</figcaption>
+                    <figcaption>Qual livro eu devo ler?</figcaption>
                 </figure>
                 <figure>
                     <img src="./images.img/2.png" alt="The Sims 4: Meu jogo de lazer">
@@ -53,7 +62,7 @@
                 </figure>
                 <figure>
                     <img src="./images.img/4.png" alt="Bobbie goods: Por que virou uma febre? E porque eu quero comprar um também">
-                    <figcaption>Bobbie goods: Por que virou uma febre? E porque eu quero comprar um também</figcaption>
+                    <figcaption>Bobbie goods: Meu sonho de consumo</figcaption>
                 </figure>
                 <figure>
                     <img src="./images.img/5.png" alt="Estudando JavaScript: Maiores desafios">
@@ -73,9 +82,9 @@
                 </figure>
             </div>
         </div>
-</section>
-
-            <h2>Receita simples para fazer em casa: Miojo Gourmet</h2>
+        </div>
+        <div class="receitas-lista">
+            <h3>Você vai precisar de:</h3>
             <ol>
             <li>Miojo sabor tomate da Turma da Mônica (Sim, tem que ser especificamente esse)</li>
             <li>Leite</li>
@@ -93,20 +102,38 @@
             <li>Coloque uma colher de sopa de requeijão na massa e misture tudo</li>
             <li>Voilá! Bon Apetit!</li>
             </ol>
-        <nav>
-            <h2>Ei, aproveite esse momento para assistir algo enquanto come</h2>
+        <nav class="videos-lista">
+            <h2>Que tal assistir algo enquanto come? Segue minhas indicações:</h2>
             <ul>
                 <li>
-                    <a href="https://www.youtube.com/c/UnusualVideos">Unusual Memes</a><p>Perfeito para você que curte dar risada em memes enquanto enche o buchinho
+                    <a href="https://www.youtube.com/c/UnusualVideos" target="_blank"><img src="./images.img/youtube.jpg" alt="Youtube - Unusual Videos"></a>
+                    <div>
+                        <a href="https://www.youtube.com/c/UnusualVideos" target="_blank">Unusual Memes</a>
+                        <p>Perfeito para você que curte dar risada em memes enquanto enche o buchinho</p>
+                    </div>
                 </li>
                 <li>
-                    <a href="https://www.netflix.com/browse">Netflix</a><p>Não tem como errar com a Netinha, né? Aqui você poderá escolher qualquer categoria de filme ou série para assistir enquanto aproveita o rango
+                    <a href="https://www.netflix.com/browse" target="_blank">
+                    <img src="./images.img/netflix.png" alt="Netflix">
+                    </a>
+                    <div>
+                    <a href="https://www.netflix.com/browse" target="_blank">Netflix</a>
+                    <p>Não tem como errar com a Netinha, né? Aqui você poderá escolher qualquer categoria de filme ou série para assistir enquanto aproveita o rango</p>
+                    </div>
                 </li>
                 <li>
-                    <a href="https://play.max.com">HBO Max</a><p>Ótima sugestão para você que curte uma série de comédia tanto quanto eu, pode confiar que as melhores opções você encontra aqui (só não vai se engasgar de tanto rir com o miojo, hein)
+                    <a href="https://play.max.com" target="_blank">
+                    <img src="./images.img/hbo.jpg" alt="HBO Max">
+                    </a>
+                    <div>
+                    <a href="https://play.max.com" target="_blank">HBO Max</a>
+                    <p>Ótima sugestão para você que curte uma série de comédia tanto quanto eu, pode confiar que as melhores opções você encontra aqui</p>
+                    </div>
                 </li>
             </ul>
         </nav>
+        </div>
+</section>
     </main>
 
     <footer>
