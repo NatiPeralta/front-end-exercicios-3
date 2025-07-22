@@ -9,7 +9,8 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <a href="index.html" class="logo"> <img src="./images.img/tl.png" id="img" height="40px" width="40px">Natália Peralta</a>
+            <a href="index.html" class="logo"> 
+                <img src="./images.img/tl.png" id="img" height="40px" width="40px" alt="Logo">Natália Peralta</a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li id="nav-item"><a href="listas.html" class="nav-link">Listas</a></li>
@@ -28,25 +29,27 @@
 
     <main>
          <section class="main-content">
-            <div class="hobbies-galeria">
-                <ul class="hobbies-lista">
+            <article class="hobbies-galeria">
+                <div id="hobbies-lista">
                     <h2>Sobre mim: Descubra os meus 5 Hobbies favoritos!</h2>
                     <p>Oie, tudo bem? Eu me chamo Natália e estou muito feliz de ter você por aqui! Além de ser uma pessoa apaixonada por tecnologia e querer muito me tornar uma Dev, também tenho alguns passatempos que costumo praticar quando não estou no trabalho ou na frente do computador programando. Aqui vai a minha lista com 5 Hobbies que eu adoro: </p>
-                    <li>Ler livros</li>
-                    <li>Jogar The Sims 4</li>
-                    <li>Assistir séries de comédia</li>
-                    <li>Pintar</li>
-                    <li>Estudar conteúdos para me tornar uma Dev</li>
+                    <ul class="hobbies-lista">
+                        <li>Ler livros</li>
+                        <li>Jogar The Sims 4</li>
+                        <li>Assistir séries de comédia</li>
+                        <li>Pintar</li>
+                        <li>Estudar conteúdos para me tornar uma Dev</li>
+                    </ul>
 
                     <p id="texto">Como você deve ter percebido, cozinhar não faz parte da minha lista de Hobbies favoritos, mas gostaria de compartilhar com vocês uma receita excelente e prática (nada saudável) que já me salvou de várias noites de preguiça! ;D </p>
 
-                    <img src="./images.img/miojo-gourmet.jpg" alt="">
-
-                    <h2>Receita simples para fazer em casa: Miojo Gourmet</h2>
-                </ul>
+                    <figure>
+                        <img src="./images.img/miojo-gourmet.jpg" alt="Miojo Gourmet">
+                    </figure>
+                </div>
                
-        <div class="hobbies-lista">
-            <h2>Últimos posts relacionados aos meus Hobbies:</h2>
+        <aside class="hobbies-galerias-posts">
+            <h2>Últimos posts relacionados aos meus hobbies:</h2>
                 <div class="galeria">
                 <figure>
                     <img src="./images.img/1.png" alt="Dia de leitura">
@@ -81,17 +84,20 @@
                     <figcaption>ideias para o próximo projeto</figcaption>
                 </figure>
             </div>
-        </div>
-        </div>
-        <div class="receitas-lista">
-            <h3>Você vai precisar de:</h3>
-            <ol>
-            <li>Miojo sabor tomate da Turma da Mônica (Sim, tem que ser especificamente esse)</li>
+        </aside>
+    </article>
+
+    <section class="receitas-lista">
+        <h2>Receita simples para fazer em casa: Miojo Gourmet</h2>
+        <h3>Você vai precisar de:</h3>
+        <ol>
+            <li>Miojo sabor tomate da Turma da Mônica</li>
             <li>Leite</li>
             <li>Requeijão</li>
-            </ol>
-            <h3>Como preparar:</h3>
-            <ol>
+        </ol>
+            
+        <h3>Como preparar:</h3>
+        <ol>
             <li>Coloque o miojo na panela com água (até cobrir a massa)</li>
             <li>Ligue o fogão e deixe o miojo cozinhando até o ponto de sua preferência</li>
             <li>Separe o tempero de tomate que vem junto com o miojo e misture com um pouquinho de leite</li>
@@ -101,7 +107,9 @@
             <li>Misture até ficar tudo vermelho</li>
             <li>Coloque uma colher de sopa de requeijão na massa e misture tudo</li>
             <li>Voilá! Bon Apetit!</li>
-            </ol>
+        </ol>
+    </section>
+            
         <nav class="videos-lista">
             <h2>Que tal assistir algo enquanto come? Segue minhas indicações:</h2>
             <ul>
@@ -132,9 +140,8 @@
                 </li>
             </ul>
         </nav>
-        </div>
 </section>
-    </main>
+</main>
 
     <footer>
         <p>&copy; 2025 Natália Peralta — Todos os direitos reservados.</p>
