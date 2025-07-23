@@ -95,7 +95,10 @@ a{
 
 .hamburguer{
     display: none;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
 }
 
 .bar {
@@ -107,6 +110,17 @@ a{
     background-color: #353970;
     transition: all 0.3s ease-in-out;
 }
+
+.hamburguer.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 7px);
+}
+.hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburguer.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -7px);
+}
+
 
 h1 {
     color: #353970;
@@ -170,18 +184,22 @@ p {
 @media(max-width: 600px) {
     .hamburguer {
         display: block;
+        cursor: pointer;
     }
     .nav-menu{
         position: fixed;
         left: -100%;
         top: 70px;
-        gap: 0;
-        border-radius: 0 0 20px 20px;
-        background-color: black;
-        text-align: center;
         flex-direction: column;
+        gap: 0;
+        background-color: #EDF2F7;
+        color: #353970;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
         width: 100%;
-        transition: 0,3s;
+        height: 30%;
+        transition: left 0.3s ease;
+        justify-content: center;
     }
     .nav-item{
         margin: 16px 0;

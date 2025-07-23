@@ -75,5 +75,23 @@
     <footer>
         <p>&copy; 2025 Natália Peralta — Todos os direitos reservados.</p>
     </footer>
+
+    <script>  
+    const hamburguer = document.querySelector('.hamburguer');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburguer.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburguer.classList.toggle('active');
+    });
+
+    // Fecha o menu quando um link for clicado
+    document.querySelectorAll('.nav-link').forEach(link =>
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburguer.classList.remove('active');
+        })
+    );
+</script>
 </body>
 </html>
