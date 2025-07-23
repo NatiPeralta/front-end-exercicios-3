@@ -33,9 +33,6 @@ p {
   line-height: 25px;
 }
 
-/* ------------------------------ */
-/* HEADER E NAVEGAÇÃO             */
-/* ------------------------------ */
 header {
   background-color: #EDF2F7;
   padding: 40px;
@@ -103,9 +100,6 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-/* ------------------------------ */
-/* MAIN                           */
-/* ------------------------------ */
 main {
   margin: 5px 0 100px;
   padding: 40px;
@@ -117,36 +111,36 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-
 }
-
-#texto {
-  padding: 30px 80px 20px 0;
-}
-
-/* ------------------------------ */
-/* SEÇÃO HOBBIES E GALERIA        */
-/* ------------------------------ */
 
 .hobbies-galeria {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin-top: 40px;
   gap: 40px;
+  border-bottom: 1px solid #CBD5E0;
 }
 
 .hobbies-lista {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
 }
 
 #hobbies-lista {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 80%;
+}
+
+#hobbies-lista p{
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+#hobbies-lista h2{
+  width: 80%;
 }
 
 .hobbies-lista li {
@@ -173,9 +167,6 @@ main {
   color: #ff7f50;
 }
 
-/* ------------------------------ */
-/* SEÇÃO GALERIA                  */
-/* ------------------------------ */
 .galeria {
   flex: 0 0 300px;
   display: grid;
@@ -197,7 +188,6 @@ main {
 }
 
 figure {
-  display: block;
   max-width: 100%;
   margin: 20px auto; /* Centraliza e dá respiro */
   text-align: center;
@@ -219,9 +209,6 @@ figcaption {
   margin-top: 6px;
 }
 
-/* ------------------------------ */
-/* SEÇÃO RECEITAS                 */
-/* ------------------------------ */
 .receitas-lista,
 .videos-lista {
   display: block;
@@ -229,25 +216,42 @@ figcaption {
 }
 
 .receitas-lista {
-  margin-bottom: 10px;
+  width: 50%;        /* Define uma largura para a lista */
+  margin: 0 auto;    /* Centraliza horizontalmente */
+  text-align: left;  /* Mantém o texto alinhado à esquerda */
+  list-style-position: inside; /* (Opcional) Ajusta os marcadores */
+  border-bottom: 1px solid #CBD5E0;
 }
 
 .receitas-lista ol {
-  padding-left: 20px;
   margin-bottom: 20px;
 }
 
 .receitas-lista li {
   margin-bottom: 5px;
+  text-align: left;
+  display: inline-block;
+}
+
+.receitas-lista h2 {
+  padding-bottom: 20px;
 }
 
 .receitas-lista h3 {
   margin-bottom: 10px;
 }
 
-/* ------------------------------ */
-/* SEÇÃO VÍDEOS                   */
-/* ------------------------------ */
+.videos-lista {
+  width: 50%;        /* Define uma largura para a lista */
+  margin: 0 auto;    /* Centraliza horizontalmente */
+  text-align: left;  /* Mantém o texto alinhado à esquerda */
+  list-style-position: inside; /* (Opcional) Ajusta os marcadores */
+}
+
+.videos-lista h2{
+  padding-bottom: 50px;
+}
+
 .videos-lista ul {
   display: flex;
   justify-content: center;
@@ -311,9 +315,6 @@ figcaption {
   margin: 0;
 }
 
-/* ------------------------------ */
-/* SEÇÕES DIVERSAS (CARDS INDEX)  */
-/* ------------------------------ */
 .section-1,
 .section-2,
 .section-3 {
@@ -354,9 +355,6 @@ figcaption {
   border-top: 1px solid white;
 }
 
-/* ------------------------------ */
-/* FOOTER                         */
-/* ------------------------------ */
 footer {
   position: fixed;
   bottom: 0;
@@ -368,9 +366,6 @@ footer {
   border-bottom: 1px solid #CBD5E0;
 }
 
-/* ------------------------------ */
-/* RESPONSIVIDADE                 */
-/* ------------------------------ */
 @media (max-width: 600px) {
   .hamburguer {
     display: block;
